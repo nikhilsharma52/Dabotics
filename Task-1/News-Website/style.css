@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f3f3f3;
+  background-image: url('https://cdn.pixabay.com/photo/2018/03/08/18/29/flowers-3205018_960_720.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
+
+.heading-container {
+  background-color: #3a20cb;
+  color: #ffffff;
+  font-size: 2.5em;
+  padding: 0.6em 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 50px 0 rgba(2, 0, 31, 0.3);
+  z-index: 1;
+}
+
+.heading-container h4 {
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+.options-container {
+  margin: 10em 0 2em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  text-align: center;
+}
+
+.option {
+  background-color: #151313;
+  border: none;
+  cursor: pointer;
+  padding: 0.8em 1.5em;
+  border-radius: 0.5em;
+  border: none;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-weight: 600;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  /* Add box-shadow to create lifting effect on hover */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Apply hover effect */
+.option:hover {
+  background-color: #20cb5f;
+  /* Add a deeper box-shadow on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.active {
+  background-color: #20a9cb;
+  /* Add a deeper box-shadow when the button is active */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1em;
+}
+
+.news-card {
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+  box-shadow: 0 0 15px rgba(85, 85, 85, 0.2);
+  margin: 1em 0;
+  border-radius: 15px;
+}
+
+.news-card img {
+  border-radius: 15px 15px 0 0;
+}
+
+.news-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+  font-size: 15px;
+}
+
+.news-title {
+  font-weight: 600;
+  color: #0b0028;
+}
+
+.news-description {
+  color: #6f6f6f;
+  text-align: justify;
+  margin: 0.8em 0 1em 0;
+}

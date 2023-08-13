@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 5px;
+  text-align: center;
+}
+
+body {
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 320px;
+  background-color: #c0c0c0;
+  box-shadow: 0px 0px 0px 10px #666;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+#display {
+  width: 320px;
+  height: 40px;
+  text-align: right;
+  background-color: black;
+  border: 3px solid white;
+  font-size: 18px;
+  left: 2px;
+  top: 2px;
+  color: #7fff00;
+}
+
+/* Button styles */
+
+input[type="button"] {
+  color: white;
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+input[type="button"]:hover {
+  background-color: #555;
+  transform: scale(1.1);
+}
+
+.btnTop {
+  background-color: aqua;
+}
+
+.btnNum {
+  background-color: palevioletred;
+}
+
+.btnMath {
+  background-color: blueviolet;
+}
+
+.btnOpps {
+  background-color: burlywood;
+}
